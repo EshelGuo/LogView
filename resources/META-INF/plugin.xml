@@ -24,6 +24,9 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
+    <errorHandler implementation="open.log.core.MyErrorReportSubmitter"/>
+
+    <toolWindow id="LogView" icon="/icon/ic_android.png" anchor="bottom" factoryClass="open.log.plugins.LogViewToolWindowFactory"/>
   </extensions>
 
   <actions>
